@@ -1,88 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-    <div class="container">
-      <h1>My Portfolio</h1>
-      <nav>
-        <ul id="nav-list">
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="#Education">Education</a></li>
-        </ul>
-      </nav>
-      <button id="menu-toggle">☰</button>
-    </div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <section id="about" class="container">
+  <section id="home" class="home">
+    <div class="intro">
+      <h1>Welcome to My Portfolio</h1>
+      <p>I'm a passionate developer with skills in web technologies.</p>
+    </div>
+  </section>
+
+  <section id="about" class="about">
     <h2>About Me</h2>
-    <p>Passionate and motivated MCA student with a strong interest in software development. I'm currently focused on learning Data Structures and Algorithms to strengthen my problem-solving skills and build a solid foundation for technical interviews.
-        I have hands-on experience with programming languages like C and C++, and I’m always eager to explore new technologies. My goal is to enhance my skills continuously and contribute meaningfully to the tech industry by working on real-world projects and collaborative development.    
-        I believe in learning by doing, and I’m currently looking for opportunities where I can grow as a developer while adding value to the team and the industry.</p>
+    <p>Hi, I'm a full-stack developer who loves building creative web solutions. I specialize in HTML, CSS, JavaScript, and ReactJS.</p>
   </section>
 
-  <section id="education" class="container py-16">
-    <h2 class="text-2xl font-bold mb-6 text-center">Education</h2>
-    <div class="space-y-6">
-      <div class="bg-white shadow-md p-6 rounded-lg">
-        <h3 class="text-xl font-semibold">Master of Computer Applications (MCA)</h3>
-        <p class="text-gray-700">GL BAJAJ INSTITUTE OF TECHNOLOGY & MANAGEMENT, GREATER NOIDA</p>
-        <p class="text-sm text-gray-500">Expected Graduation: [2026]</p>
+  <section id="projects" class="projects">
+    <h2>My Projects</h2>
+    <div class="project-list">
+      <div class="project">
+        <h3>Project 1</h3>
+        <p>Project description goes here.</p>
       </div>
-      <div class="bg-white shadow-md p-6 rounded-lg">
-        <h3 class="text-xl font-semibold">Bachelor Of Computer Application</h3>
-        <p class="text-gray-700"> Bundelkhand University ,Jhansi</p>
-        <p class="text-sm text-gray-500">Completed: 2024</p>
+      <div class="project">
+        <h3>Project 2</h3>
+        <p>Project description goes here.</p>
       </div>
     </div>
   </section>
 
-  <section id="projects" class="container">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>Library Management System</h3>
-      <p>An Library Management system  that helps student create professional resumes easily.</p>
-    </div>
-    <div class="project">
-      <h3>Medical Diagnosis System</h3>
-      <p>A system that uses AI to predict possible diseases based on symptoms.</p>
-    </div>
-  </section>
-
-  
-  <section id="certifications" class="container py-16 bg-gray-50">
-    <h2 class="text-2xl font-bold mb-6 text-center">Certifications</h2>
-    <div class="space-y-4">
-      <div class="bg-white shadow-sm p-4 rounded-md">
-        <h4 class="text-lg font-medium">Data Structures and Algorithms in C++</h4>
-        <p class="text-gray-600 text-sm">Coursera / Udemy / Coding Ninjas — [Month Year]</p>
-      </div>
-      <div class="bg-white shadow-sm p-4 rounded-md">
-        <h4 class="text-lg font-medium">C Programming Basics</h4>
-        <p class="text-gray-600 text-sm">[Platform] — [Month Year]</p>
-      </div>
-
-    </div>
-  </section>
-  
-
-  <section id="contact" class="container">
+  <section id="contact" class="contact">
     <h2>Contact</h2>
-    <p>Email: priyanshusahu2611@gmail.com</p>
-    <p>LinkedIn: <a href="#">https://www.linkedin.com/in/priyanshu-sahu-74b221242/</a></p>
-    <p>GitHub: <a href="#">https://github.com/SahuPrii</a></p>
+    <form id="contactForm">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
   </section>
 
   <footer>
-    <p>&copy; 2025 Priyanshu Sahu. All rights reserved.</p>
+    <p>&copy; 2025 My Portfolio. All rights reserved.</p>
   </footer>
 
   <script src="script.js"></script>
