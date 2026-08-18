@@ -10,5 +10,5 @@ This is my personal portfolio website where I have shared information about me, 
 
 ## 📌 About
 
-This portfolio is made to showcase my work and skills to recruiters and visitors. It includes sections like About Me, Skills, Projects, and Contact.
+This portfolio is made to showcase my work and skills to recruiters and visitors. It includes sections like About Me, Skills, Projects.
 
